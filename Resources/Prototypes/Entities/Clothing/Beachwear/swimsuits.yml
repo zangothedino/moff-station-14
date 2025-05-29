@@ -1,0 +1,87 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: Bikinibase
+  name: Simple Bikini
+  description: A simple plain no spotted white bikini.
+  components:
+  - type: Sprite
+    sprite: Clothing/Beachwear/swimsuits/bikinibase.rsi
+  - type: Clothing
+    sprite: Clothing/Beachwear/swimsuits/bikinibase.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: fullpiece
+  name: Simple Full Piece Swimsuit
+  description: A modest full piece swimsuit, good for swimming.
+  components:
+  - type: Sprite
+    sprite: Clothing/Beachwear/swimsuits/fullpiece.rsi
+  - type: Clothing
+    sprite: Clothing/Beachwear/swimsuits/fullpiece.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: heartsuit
+  name: Simple hearts linked two piece.
+  description: Two of hearts, two hearts that beat as one, in this lovely interlocked two piece.
+  components:
+  - type: Sprite
+    sprite: Clothing/Beachwear/swimsuits/heartsuit.rsi
+  - type: Clothing
+    sprite: Clothing/Beachwear/swimsuits/heartsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: honkini
+  name: Honk Mothers Two Piece
+  description: Gotta keep those lovin' good vibrations a-happenin' with her.
+  components:
+  - type: Sprite
+    sprite: Clothing/Beachwear/swimsuits/honkini.rsi
+  - type: Clothing
+    sprite: Clothing/Beachwear/swimsuits/honkini.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: medkini
+  name: Medikini
+  description: Doctor! I swear I really was drowning!
+  components:
+  - type: Sprite
+    sprite: Clothing/Beachwear/swimsuits/medkini.rsi
+  - type: Clothing
+    sprite: Clothing/Beachwear/swimsuits/medkini.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: nanokini
+  name: Official Two Piece Nanotrasen Sanctioned Swimwear
+  description: GLORY TO NANOTRASEN!
+  components:
+  - type: Sprite
+    sprite: Clothing/Beachwear/swimsuits/nanokini.rsi
+  - type: Clothing
+    sprite: Clothing/Beachwear/swimsuits/nanokini.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: old_timey_swimsuit
+  name: Vintage Swimwear
+  description:
+  components:
+  - type: Sprite
+    sprite: Clothing/Beachwear/swimsuits/old_timey_swimsuit.rsi
+  - type: Clothing
+    sprite: Clothing/Beachwear/swimsuits/old_timey_swimsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: syndikini
+  name: Syndikini
+  description: Yes, We are hotter than NT.
+  components:
+  - type: Sprite
+    sprite: Clothing/Beachwear/swimsuits/syndikini.rsi
+  - type: Clothing
+    sprite: Clothing/Beachwear/swimsuits/syndikini.rsi
