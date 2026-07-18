@@ -164,7 +164,14 @@
       # eating salt on its own kinda sucks, kids
       - !type:SatiateThirst
         factor: -0.5
-
+      #sneople
+      - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Sneople ]
+        damage:
+          types:
+            Caustic: 3
 - type: reagent
   id: Syrup
   name: reagent-name-syrup

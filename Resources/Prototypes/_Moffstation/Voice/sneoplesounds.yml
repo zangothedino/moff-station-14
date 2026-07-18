@@ -1,0 +1,50 @@
+﻿- type: speechSounds
+  id: Sneople
+  saySound:
+    path: /Audio/_Moffstation/Voice/Sneople/snail.ogg
+  askSound:
+    path: /Audio/_Moffstation/Voice/Sneople/snail_ask.ogg
+  exclaimSound:
+    path: /Audio//Voice/Sneople/snail_exclaim.ogg
+
+- type: emoteSounds
+  id: UnisexSnail
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/_Moffstation/Voice/Sneople/snail_scream.ogg
+    Laugh:
+      path: /Audio/_Moffstation/Voice/Sneople/snail_laugh.ogg
+    Sneeze:
+      collection: UnisexSneezes
+    Cough:
+      path: /Audio/_Moffstation/Voice/Sneople/snail_cough.ogg
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      path: /Audio/_Moffstation/Voice/Sneople/snail_yawn.ogg
+    Snore:
+      collection: Snores
+    Sigh:
+      path: /Audio/_Moffstation/Voice/Sneople/snail_sigh.ogg
+    Honk:
+      collection: BikeHorn
+    Crying:
+      path: /Audio/_Moffstation/Voice/Sneople/snail_cry.ogg
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
+    Gasp:
+      path: /Audio/_Moffstation/Voice/Sneople/snail_gasp.ogg
+    DefaultDeathgasp:
+      path: /Audio/_Moffstation/Voice/Sneople/snail_deathgasp.ogg

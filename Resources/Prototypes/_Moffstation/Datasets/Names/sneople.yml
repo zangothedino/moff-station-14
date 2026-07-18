@@ -1,0 +1,11 @@
+﻿- type: localizedDataset
+  id: NamesSneopleFirst
+  values:
+    prefix: names-sneople-first-
+    count: 65
+
+- type: localizedDataset
+  id: NamesSneopleLast
+  values:
+    prefix: names-sneople-last-
+    count: 130

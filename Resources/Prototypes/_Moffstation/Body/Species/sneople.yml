@@ -1,0 +1,523 @@
+﻿- type: markingsGroup
+  parent: Undergarments
+  id: Sneople #changed to sneople
+  onlyGroupWhitelisted: true
+  limits:
+    enum.HumanoidVisualLayers.Special:
+      limit: 10
+      required: false
+    enum.HumanoidVisualLayers.Hair:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.Tail:
+      limit: 1
+      required: true
+      default: [ tail ] #tail
+    enum.HumanoidVisualLayers.LLeg:
+      limit: 4
+      required: false
+    enum.HumanoidVisualLayers.RLeg:
+      limit: 4
+      required: false
+    enum.HumanoidVisualLayers.LArm:
+      limit: 4
+      required: false
+    enum.HumanoidVisualLayers.RArm:
+      limit: 4
+      required: false
+    enum.HumanoidVisualLayers.Head:
+      limit: 6
+      required: false
+    enum.HumanoidVisualLayers.Chest:
+      limit: 3
+      required: false
+    enum.HumanoidVisualLayers.UndergarmentTop:
+      limit: 1
+      required: false
+      nudityDefault: [ ] #sneople underwear
+    enum.HumanoidVisualLayers.UndergarmentBottom:
+      limit: 1
+      required: false
+      nudityDefault: [  ] #sneople underwear
+
+- type: entity
+  parent: BaseSpeciesAppearance
+  id: AppearanceSneople #probably need to figure where this id goes?
+  name: Sneople appearance
+  components:
+  - type: Sprite
+    netsync: false
+    layers:
+    # Torso
+    - map: [ "enum.HumanoidVisualLayers.Chest" ]
+
+    # Head
+    - map: [ "enum.HumanoidVisualLayers.Head" ]
+    - map: [ "enum.HumanoidVisualLayers.Snout" ]
+    - map: [ "enum.HumanoidVisualLayers.Eyes" ]
+
+    # Limbs
+    - map: [ "enum.HumanoidVisualLayers.RArm" ]
+    - map: [ "enum.HumanoidVisualLayers.LArm" ]
+    - map: [ "enum.HumanoidVisualLayers.RLeg" ]
+    - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+
+    # Underwear
+    - map: [ "enum.HumanoidVisualLayers.UndergarmentBottom" ]
+    - map: [ "enum.HumanoidVisualLayers.UndergarmentTop" ]
+    - map: [ "jumpsuit" ]
+
+    # Extremities
+    - map: [ "enum.HumanoidVisualLayers.LHand" ]
+    - map: [ "enum.HumanoidVisualLayers.RHand" ]
+    - map: [ "enum.HumanoidVisualLayers.LFoot" ]
+    - map: [ "enum.HumanoidVisualLayers.RFoot" ]
+
+    # More equipment
+    - map: [ "gloves" ]
+    - map: [ "shoes" ]
+    - map: [ "ears" ]
+    - map: [ "eyes" ]
+    - map: [ "id" ]
+    - map: [ "outerClothing" ]
+    - map: [ "belt" ]
+    - map: [ "enum.HumanoidVisualLayers.Tail" ] # sneople should have their tail behind their backpack.
+    - map: [ "back" ]
+    - map: [ "neck" ]
+
+    # Stuff that appears above equipment.
+    - map: [ "enum.HumanoidVisualLayers.SnoutCover" ]
+    - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
+    - map: [ "enum.HumanoidVisualLayers.Hair" ]
+    - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
+    - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
+
+    # Stuff that goes in front of stuff that goes in front of equipment
+    - map: [ "mask" ]
+    - map: [ "head" ]
+    - map: [ "pocket1" ]
+    - map: [ "pocket2" ]
+
+    # Extras
+    - map: [ "clownedon" ] # Custom sneople creampie :GODO:
+      sprite: "_Moffstation/Effects/creampie.rsi"
+      state: "creampie_sneople"
+      visible: false
+  - type: Inventory
+    speciesId: sneople
+    displacements: #will need to go through and add all the displacements
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: jumpsuit
+      head:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: head
+      eyes:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: eyes
+      gloves:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: hands
+      back:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: back
+      ears:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: ears
+      shoes:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: feet
+      neck:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: neck
+      mask:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: mask
+      outerClothing:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: outerClothing
+      suitstorage:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: suitStorage
+      belt:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: belt
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: jumpsuit
+      head:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: head
+      eyes:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: eyes
+      gloves:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: hands
+      back:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: back
+      ears:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: ears
+      shoes:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: feet
+      neck:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: neck
+      mask:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: mask
+      outerClothing:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: outerClothing
+      suitstorage:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: suitStorage
+      belt:
+        sizeMaps:
+          32:
+            sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+            state: belt
+  - type: Hands
+    handDisplacement:
+      sizeMaps:
+        32:
+          sprite: _Moffstation/Mobs/Species/Sneople/displacement.rsi
+          state: inHand
+  - type: InitialBody
+    organs: #unsure if this goes into another file or if these are names?
+      Torso: OrganSneopleTorso
+      Head: OrganSneopleHead
+      ArmLeft: OrganSneopleArmLeft
+      ArmRight: OrganSneopleArmRight
+      HandRight: OrganSneopleHandRight
+      HandLeft: OrganSneopleHandLeft
+      LegLeft: OrganSneopleLegLeft
+      LegRight: OrganSneopleLegRight
+      FootLeft: OrganSneopleFootLeft
+      FootRight: OrganSneopleFootRight
+      Brain: OrganSneopleBrain
+      Eyes: OrganSneopleEyes
+      Tongue: OrganSneopleTongue
+      Appendix: OrganSneopleAppendix
+      Ears: OrganSneopleEars
+      Lungs: OrganSneopleLungs
+      Heart: OrganSneopleHeart
+      Stomach: OrganSneopleStomach
+      Liver: OrganSneopleLiver
+      Kidneys: OrganSneopleKidneys
+  - type: HumanoidProfile
+    species: Sneople
+  - type: FireVisuals #def need to add the fire damages
+    sprite: _Moffstation/Mobs/Effects/onfire.rsi
+    normalState: Sneople_minor_burning
+    alternateState: Sneople_burning
+
+- type: entity
+  parent:
+  - AppearanceSneople
+  - BaseSpeciesMobOrganic
+  id: MobSneople
+  name: Snurist McSnail
+  components:
+  - type: Damageable
+    damageModifierSet: Sneople #not sure what this is
+  - type: Speech
+    speechVerb: Sneople
+    speechSounds: UnisexSneople
+    allowedEmotes: [ '',] #need to come up with allowed emotes
+  - type: TypingIndicator
+    proto: sneople
+  - type: Vocal
+    sounds:
+      Male: UnisexSneople
+      Female: UnisexSneople
+      Unsexed: UnisexSneople
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatChicken #escargo?
+      amount: 3
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Caustic
+        damage: 400
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: false
+        spawn:
+          Acidifier:
+            min: 1
+            max: 1
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 400
+      behaviors:
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 1500
+      behaviors:
+      - !type:BurnBodyBehavior
+        popupMessage: bodyburn-sneople-text-others
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Radiation
+        damage: 15
+      behaviors:
+      - !type:PopupBehavior
+        popup: mouth-taste-metal
+        popupType: LargeCaution
+        targetOnly: true
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Radiation
+        damage: 40
+      behaviors:
+      - !type:VomitBehavior
+  - type: DamageVisuals
+    thresholds: [ 25, 50, 75, 100 ]
+    targetLayers:
+    - "enum.HumanoidVisualLayers.Chest"
+    - "enum.HumanoidVisualLayers.Head"
+    - "enum.HumanoidVisualLayers.LArm"
+    - "enum.HumanoidVisualLayers.LLeg"
+    - "enum.HumanoidVisualLayers.RArm"
+    - "enum.HumanoidVisualLayers.RLeg"
+    - "enum.HumanoidVisualLayers.RHand"
+    - "enum.HumanoidVisualLayers.LHand"
+    - "enum.HumanoidVisualLayers.RFoot"
+    - "enum.HumanoidVisualLayers.LFoot"
+    damageOverlayGroups:
+      Brute:
+        sprite: _Moffstation/Mobs/Effects/Sneople/brute_damage.rsi #need to add
+        color: "#C048C2"
+      Burn:
+        sprite: _Moffstation/Mobs/Effects/Sneople/burn_damage.rsi #need to add
+  - type: Temperature
+    specificHeat: 44
+  - type: TemperatureDamage # should change to something else unsure what
+    heatDamageThreshold: 325
+    coldDamageThreshold: 230
+    coldDamage:
+      types:
+        Cold: 0.1 # Per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat: 1.5 # Per second, scales with temperature & other constants
+  - type: TemperatureProtection
+    heatingCoefficient: 1.2
+    coolingCoefficient: 0.50
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 95 #tiny
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: NightVision
+  - type: FlashModifier
+    modifier: 2
+
+
+- type: entity #unsure where to create the new organs
+  parent: OrganBase
+  id: OrganSneople
+  abstract: true
+  suffix: Sneople
+
+- type: entity
+  id: OrganSneopleMetabolizer
+  abstract: true
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Sneople ] #need to figure out vegitarian again
+
+- type: entity
+  parent: OrganSneople
+  id: OrganSneopleInternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Human/organs.rsi
+
+- type: entity
+  id: OrganSneopleVisual
+  abstract: true
+  components:
+  - type: VisualOrgan
+    data:
+      sprite: _Moffstation/Mobs/Species/Sneople/parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: Sneople
+
+- type: entity
+  parent: [ OrganSneople, OrganSneopleVisual ]
+  id: OrganSneopleExternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Moffstation/Mobs/Species/Sneople/parts.rsi
+
+- type: entity
+  parent: [ OrganBaseTorso, OrganSneopleExternal ]
+  id: OrganSneopleTorso
+
+- type: entity
+  parent: [ OrganBaseHead, OrganSneopleExternal ]
+  id: OrganSneopleHead
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganSneopleExternal ]
+  id: OrganSneopleArmLeft
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganSneopleExternal ]
+  id: OrganSneopleArmRight
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganSneopleExternal ]
+  id: OrganSneopleHandLeft
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganSneopleExternal ]
+  id: OrganSneopleHandRight
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganSneopleExternal ]
+  id: OrganSneopleLegLeft
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganSneopleExternal ]
+  id: OrganSneopleLegRight
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganSneopleExternal ]
+  id: OrganSneopleFootLeft
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganSneopleExternal ]
+  id: OrganSneopleFootRight
+
+- type: entity
+  parent: [ OrganBaseBrain, OrganSpriteHumanInternal, OrganSneopleInternal ]
+  id: OrganSneopleBrain
+
+- type: entity
+  parent: [ OrganSneopleVisual, OrganBaseEyes, OrganSneopleInternal ]
+  id: OrganSneopleEyes
+  components:
+  - type: VisualOrgan
+    data:
+      sprite: _Moffstation/Mobs/Customization/eyes.rsi
+      state: sneople
+
+- type: entity
+  parent: [ OrganBaseTongue, OrganSneopleInternal ]
+  id: OrganSneopleTongue
+
+- type: entity
+  parent: [ OrganBaseAppendix, OrganSpriteHumanInternal, OrganSneopleInternal ]
+  id: OrganSneopleAppendix
+
+- type: entity
+  parent: [ OrganBaseEars, OrganSpriteHumanInternal, OrganSneopleInternal ]
+  id: OrganSneopleEars
+
+- type: entity
+  parent: [ OrganBaseLungs, OrganSneopleInternal, OrganSneopleMetabolizer ]
+  id: OrganSneopleLungs
+
+- type: entity
+  parent: [ OrganBaseHeart, OrganSneopleInternal, OrganSneopleMetabolizer ]
+  id: OrganSneopleHeart
+
+- type: entity
+  parent: [ OrganBaseStomach, OrganSneopleInternal, OrganSneopleMetabolizer ]
+  id: OrganSneopleStomach
+
+- type: entity
+  parent: [ OrganBaseLiver, OrganSpriteHumanInternal, OrganSneopleInternal, OrganSneopleMetabolizer ]
+  id: OrganSneopleLiver
+
+- type: entity
+  parent: [ OrganBaseKidneys, OrganSpriteHumanInternal, OrganSneopleInternal, OrganSneopleMetabolizer ]
+  id: OrganSneopleKidneys
+- type: Reactive
+  reactions:
+    - reagents: [ Diphenhydramine, Lipozine, Oculine, Saline, Fresium, Hotsauce, TableSalt, Bleach, SodiumCarbonate, PestKiller, Posca ] # theres got to be a better way of doing this.
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaling: true
+        damage:
+          types:
+            Heat: 0.4
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages: [ "snail-hurt-by-chem-popup" ]
+        probability: 1

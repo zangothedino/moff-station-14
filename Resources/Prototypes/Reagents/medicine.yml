@@ -729,6 +729,13 @@
           factor: 6
         - !type:ModifyBloodLevel
           amount: 6
+        - !type:HealthChange
+            conditions:
+            - !type:MetabolizerTypeCondition
+              type: [ Sneople ]
+            damage:
+              types:
+                Caustic: 3
 
 - type: reagent
   id: Siderlac

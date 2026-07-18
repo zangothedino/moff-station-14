@@ -1,18 +1,14 @@
-{
+﻿{
     "version": 1,
+    "copyright": "sprited by zangothedino for moffstation",
     "license": "CC-BY-SA-4.0",
-    "copyright": "Sprited by Davyei (Github) for Moffstation",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
         {
-            "name": "longstalks",
-            "directions": 4
-        },
-        {
-            "name": "longeyes",
+            "name": "defaultstalks",
             "directions": 4
         },
         {
@@ -21,6 +17,14 @@
         },
         {
             "name": "droopyeyes",
+            "directions": 4
+        },
+        {
+            "name": "longstalks",
+            "directions": 4
+        },
+        {
+            "name": "longseyes",
             "directions": 4
         }
     ]

@@ -70,7 +70,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Arachnid ]
+          type: [ Arachnid, Sneople ]
           inverted: true
         damage:
           types:
@@ -78,7 +78,7 @@
       - !type:ModifyBloodLevel
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Arachnid ]
+          type: [ Arachnid, Sneople  ]
         amount: 0.4
 
 - type: reagent

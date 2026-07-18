@@ -1,0 +1,13 @@
+﻿- type: species
+  id: Sneople
+  name: species-name-sneople
+  roundStart: true
+  prototype: MobSneople
+  defaultSkinTone: "#385878"
+  dollPrototype: AppearanceSneople
+  skinColoration: Hues
+  maleFirstNames: NamesSneopleFirst
+  femaleFirstNames: NamesSneopleFirst
+  lastNames: NamesSneopleLast
+  sexes:
+  - Unsexed

@@ -1,0 +1,63 @@
+﻿# Chest
+
+#Eyes
+- type: marking
+  id: DroopyStalks
+  bodyPart: Eyes
+  groupWhitelist: [ Sneople ]
+  coloring:
+    layers:
+      eyes:
+        type: !type:EyeColoring
+      eyes_glimmer:
+        type: !type:SimpleColoring
+          color: "#eeefff"
+  sprites:
+  - sprite: &eyes_rsi "_Moffstation/Mobs/Customization/Sneople/eyes.rsi"
+    state: DroopyStalks
+  - sprite: *eyes_rsi
+    state: DroopyEyes
+
+# Head
+
+# Snout
+
+# Eyes
+
+# RArm
+
+# LArm
+
+# RLeg
+
+# LLeg
+
+# UndergarmentBottom
+
+# UndergarmentTop
+
+# LFoot
+
+# RFoot
+
+# LHand
+
+# RHand
+
+# FacialHair
+
+# Hair
+
+# HeadSide
+
+# HeadTop
+
+# Tail
+- type: marking
+  id: SneopleTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [ Sneople ]
+  sprites:
+  - sprite: Resources/Textures/_Moffstation/Mobs/Customization/Sneople/tail.rsi
+    state: tail
