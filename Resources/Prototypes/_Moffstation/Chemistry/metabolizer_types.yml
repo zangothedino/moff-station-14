@@ -9,3 +9,7 @@
 - type: metabolizerType
   id: Gray
   name: metabolizer-type-gray
+
+- type: metabolizerType
+  id: Sneople
+  name: metabolizer-type-Sneople

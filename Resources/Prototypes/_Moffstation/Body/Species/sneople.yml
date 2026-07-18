@@ -506,9 +506,10 @@
 - type: entity
   parent: [ OrganBaseKidneys, OrganSpriteHumanInternal, OrganSneopleInternal, OrganSneopleMetabolizer ]
   id: OrganSneopleKidneys
-- type: Reactive
-  reactions:
-    - reagents: [ Diphenhydramine, Lipozine, Oculine, Saline, Fresium, Hotsauce, TableSalt, Bleach, SodiumCarbonate, PestKiller, Posca ] # theres got to be a better way of doing this.
+  components:
+  - type: Reactive
+    reactions:
+    - reagents: [ Saline, TableSalt, SodiumCarbonate, PestKiller ] # theres got to be a better way of doing this.
       methods: [ Touch ]
       effects:
       - !type:HealthChange
