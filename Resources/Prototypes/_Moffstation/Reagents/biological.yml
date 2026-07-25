@@ -17,3 +17,14 @@
   products:
     JuiceBerry: 4
     Aluminium: 1
+
+
+- type: reagent
+  id: Goo
+  name: Goo
+  group: Biological
+  parent: Blood
+  color: "#757cbd"
+  desc: reagent-desc-gray-blood
+  physicalDesc: reagent-physical-desc-wobbly
+

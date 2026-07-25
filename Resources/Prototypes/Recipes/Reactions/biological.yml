@@ -108,3 +108,15 @@
     Mold: 2
     Protein: 1
     Toxin: 1
+
+- type: reaction
+  id: GooBreakdown
+  source: true
+  requiredMixerCategories:
+  - Centrifuge
+  reactants:
+    Goo:
+      amount: 5
+  products:
+    Cryoxadone: 4
+    Copper: 1
