@@ -12,7 +12,7 @@
     enum.HumanoidVisualLayers.Tail:
       limit: 1
       required: true
-      default: [ tail ] #tail
+      default: [ SneopleTail ] #tail
     enum.HumanoidVisualLayers.LLeg:
       limit: 4
       required: false
@@ -100,6 +100,11 @@
     - map: [ "pocket2" ]
 
     # Extras
+    - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
+      color: "#ffffff"
+      sprite: Objects/Misc/handcuffs.rsi
+      state: body-overlay-2
+      visible: false
     - map: [ "clownedon" ] # Custom sneople creampie :GODO:
       sprite: "_Moffstation/Effects/creampie.rsi"
       state: "creampie_sneople"
