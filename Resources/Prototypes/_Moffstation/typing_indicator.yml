@@ -34,7 +34,7 @@
   idleState: gray1
 
 - type: typingIndicator
-  id: Sneople
+  id: sneople
   spritePath: /Textures/_Moffstation/Effects/speech.rsi
   typingState: snail0
   idleState: snail1 # TODO
