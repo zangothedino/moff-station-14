@@ -87,3 +87,12 @@
     path: /Audio/_Moffstation/Voice/Avali/avali_cry.ogg
   exclaimSound:
     path: /Audio/_Moffstation/Voice/Avali/avali_cry.ogg
+
+- type: speechSounds
+  id: UnisexSneople
+  saySound:
+    path: /Audio/_Moffstation/Voice/Talk/resomi_1.ogg #TODO
+  askSound:
+    path: /Audio/_Moffstation/Voice/Talk/resomi_1_ask.ogg #TODO
+  exclaimSound:
+    path: /Audio/_Moffstation/Voice/Talk/resomi_1_exclaim.ogg #TODO
