@@ -3,7 +3,7 @@
 #Eyes
 - type: marking
   id: DroopyStalks
-  bodyPart: Eyes
+  bodyPart: HeadTop
   groupWhitelist: [ Sneople ]
   coloring:
     layers:
@@ -13,10 +13,14 @@
         type: !type:SimpleColoring
           color: "#eeefff"
   sprites:
-  - sprite: &eyes_rsi "_Moffstation/Mobs/Customization/Sneople/eyes.rsi"
-    state: DroopyStalks
-  - sprite: *eyes_rsi
-    state: DroopyEyes
+  - sprite: &headtop_rsi "_Moffstation/Mobs/Customization/Sneople/headtop.rsi"
+    state: droopystalks
+  - sprite: *headtop_rsi
+    state: droopyeyes
+
+
+
+
 
 # Head
 
@@ -41,6 +45,15 @@
 # RFoot
 
 # LHand
+
+#overlay
+- type: marking
+  id: GardenShell
+  bodyPart: Chest
+  groupWhitelist: [Sneople]
+  sprites:
+  - sprite: _Moffstation/Mobs/Customization/Sneople/chest.rsi
+    state: gardenshell
 
 # RHand
 
