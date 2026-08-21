@@ -41,11 +41,11 @@
     enum.HumanoidVisualLayers.UndergarmentTop:
       limit: 1
       required: false
-      nudityDefault: [ ] #sneople underwear
+      nudityDefault: [ SneapleUnderwearTop ] #sneople underwear
     enum.HumanoidVisualLayers.UndergarmentBottom:
       limit: 1
       required: false
-      nudityDefault: [  ] #sneople underwear
+      nudityDefault: [ SneapleUnderwearBottom ] #sneople underwear
     enum.HumanoidVisualLayers.Overlay:
       limit: 1
       required: false
