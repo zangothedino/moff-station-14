@@ -18,6 +18,39 @@
   - sprite: *headtop_rsi
     state: droopyeyes
 
+- type: marking
+  id: LongStalks
+  bodyPart: HeadTop
+  groupWhitelist: [ Sneople ]
+  coloring:
+    layers:
+      eyes:
+        type: !type:EyeColoring
+      eyes_glimmer:
+        type: !type:SimpleColoring
+          color: "#eeefff"
+  sprites:
+  - sprite: &headtop_rsi "_Moffstation/Mobs/Customization/Sneople/headtop.rsi"
+    state: longstalks
+  - sprite: *headtop_rsi
+    state: longeyes
+
+- type: marking
+  id: DefaultStalks
+  bodyPart: HeadTop
+  groupWhitelist: [ Sneople ]
+  coloring:
+    layers:
+      eyes:
+        type: !type:EyeColoring
+      eyes_glimmer:
+        type: !type:SimpleColoring
+          color: "#eeefff"
+  sprites:
+  - sprite: &headtop_rsi "_Moffstation/Mobs/Customization/Sneople/headtop.rsi"
+    state: defaultstalks
+  - sprite: *headtop_rsi
+    state: defaulteyes
 
 
 
@@ -37,9 +70,31 @@
 # LLeg
 
 # UndergarmentBottom
-
+- type: marking
+  id: SneopleUnderwearBottom
+  bodyPart: undergarments
+  markingCategory: Undergarments
+  speciesRestriction: [ Sneople ]
+  coloring:
+    default:
+      type: !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _Moffstation/Mobs/Customization/Sneople/undergarments.rsi
+    state: bottoms
 # UndergarmentTop
-
+- type: marking
+  id: SneopleUnderwearTop
+  bodyPart: undergarments
+  markingCategory: Undergarments
+  speciesRestriction: [ Sneople ]
+  coloring:
+    default:
+      type: !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _Moffstation/Mobs/Customization/Sneople/undergarments.rsi
+    state: top
 # LFoot
 
 # RFoot
@@ -49,7 +104,7 @@
 #overlay
 - type: marking
   id: GardenShell
-  bodyPart: Chest
+  bodyPart: Overlay
   groupWhitelist: [Sneople]
   sprites:
   - sprite: _Moffstation/Mobs/Customization/Sneople/chest.rsi
