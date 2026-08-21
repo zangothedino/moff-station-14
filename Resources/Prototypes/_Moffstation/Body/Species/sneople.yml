@@ -82,6 +82,9 @@
     - map: [ "enum.HumanoidVisualLayers.LFoot" ]
     - map: [ "enum.HumanoidVisualLayers.RFoot" ]
 
+    # Stuff that goes over the body but below equipment
+    - map: ["enum.HumanoidVisualLayers.Overlay"]
+
     # More equipment
     - map: [ "gloves" ]
     - map: [ "shoes" ]
@@ -91,8 +94,10 @@
     - map: [ "outerClothing" ]
     - map: [ "belt" ]
     - map: [ "enum.HumanoidVisualLayers.Tail" ] # sneople should have their tail behind their backpack.
+    - map: [ "enum.HumanoidVisualLayers.TailOverlay" ]
     - map: [ "back" ]
     - map: [ "neck" ]
+    - map: [ "suitstorage" ]
 
     # Stuff that appears above equipment.
     - map: [ "enum.HumanoidVisualLayers.SnoutCover" ]
