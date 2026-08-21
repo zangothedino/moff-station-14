@@ -7,9 +7,9 @@
   groupWhitelist: [ Sneople ]
   coloring:
     layers:
-      eyes:
+      droopyeyes:
         type: !type:EyeColoring
-      eyes_glimmer:
+      droopystalks:
         type: !type:SkinColoring
   sprites:
   - sprite: &headtop_rsi "_Moffstation/Mobs/Customization/Sneople/headtop.rsi"
@@ -23,9 +23,9 @@
   groupWhitelist: [ Sneople ]
   coloring:
     layers:
-      eyes:
+      longeyes:
         type: !type:EyeColoring
-      eyes_glimmer:
+      longstalks:
         type: !type:SkinColoring
   sprites:
   - sprite: &headtop_rsi "_Moffstation/Mobs/Customization/Sneople/headtop.rsi"
@@ -39,9 +39,9 @@
   groupWhitelist: [ Sneople ]
   coloring:
     layers:
-      eyes:
+      defaulteyes:
         type: !type:EyeColoring
-      eyes_glimmer:
+      defaultstalks:
         type: !type:SkinColoring
   sprites:
   - sprite: &headtop_rsi "_Moffstation/Mobs/Customization/Sneople/headtop.rsi"
