@@ -392,9 +392,6 @@
         - MobMask
         layer:
         - MobLayer
-  - type: NightVision
-  - type: FlashModifier
-    modifier: 2
   - type: Reactive
     reactions:
     - reagents: [ Saline, TableSalt, SodiumCarbonate, PestKiller ]
