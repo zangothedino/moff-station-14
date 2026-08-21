@@ -37,3 +37,9 @@ marking-UndergarmentBottomOnePieceGray-onepiecestripe = One Piece Stripe
 marking-UndergarmentBottomPlasticBagGray = Plastic Bag
 marking-UndergarmentBottomPlasticBagGray-plasticbag = Plastic Bag
 marking-UndergarmentBottomPlasticBagGray-plasticbaglogo = Logo
+
+marking-SneopleUnderwearTop = Classic Bra
+marking-SneopleUnderwearTop-underweartop = Classic Bra
+
+marking-SneopleUnderwearBottom = Thong
+marking-SneopleUnderwearBottom-underwearbottom = Thong
