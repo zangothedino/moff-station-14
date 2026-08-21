@@ -31,7 +31,7 @@
     enum.HumanoidVisualLayers.HeadTop:
       limit: 1
       required: true
-      default: [droopystalks]
+      default: [ DefaultStalks ]
     enum.HumanoidVisualLayers.HeadSide:
       limit: 1
       required: false
@@ -48,7 +48,8 @@
       nudityDefault: [ SneapleUnderwearBottom ] #sneople underwear
     enum.HumanoidVisualLayers.Overlay:
       limit: 1
-      required: false
+      required: true
+      default: [ GardenShell ]
 - type: entity
   parent: BaseSpeciesAppearance
   id: AppearanceSneople #probably need to figure where this id goes?
