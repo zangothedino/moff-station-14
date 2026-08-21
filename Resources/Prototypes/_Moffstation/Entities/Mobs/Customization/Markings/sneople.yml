@@ -28,7 +28,7 @@
       longstalks:
         type: !type:SkinColoring
   sprites:
-  - sprite: &headtop_rsi "_Moffstation/Mobs/Customization/Sneople/headtop.rsi"
+  - sprite: *headtop_rsi
     state: longstalks
   - sprite: *headtop_rsi
     state: longeyes
@@ -44,7 +44,7 @@
       defaultstalks:
         type: !type:SkinColoring
   sprites:
-  - sprite: &headtop_rsi "_Moffstation/Mobs/Customization/Sneople/headtop.rsi"
+  - sprite: *headtop_rsi
     state: defaultstalks
   - sprite: *headtop_rsi
     state: defaulteyes
