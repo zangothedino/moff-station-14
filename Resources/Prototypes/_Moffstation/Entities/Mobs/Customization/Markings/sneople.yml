@@ -10,8 +10,7 @@
       eyes:
         type: !type:EyeColoring
       eyes_glimmer:
-        type: !type:SimpleColoring
-          color: "#eeefff"
+        type: !type:SkinColoring
   sprites:
   - sprite: &headtop_rsi "_Moffstation/Mobs/Customization/Sneople/headtop.rsi"
     state: droopystalks
@@ -27,8 +26,7 @@
       eyes:
         type: !type:EyeColoring
       eyes_glimmer:
-        type: !type:SimpleColoring
-          color: "#eeefff"
+        type: !type:SkinColoring
   sprites:
   - sprite: &headtop_rsi "_Moffstation/Mobs/Customization/Sneople/headtop.rsi"
     state: longstalks
@@ -44,8 +42,7 @@
       eyes:
         type: !type:EyeColoring
       eyes_glimmer:
-        type: !type:SimpleColoring
-          color: "#eeefff"
+        type: !type:SkinColoring
   sprites:
   - sprite: &headtop_rsi "_Moffstation/Mobs/Customization/Sneople/headtop.rsi"
     state: defaultstalks
