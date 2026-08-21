@@ -290,7 +290,7 @@
   name: Snurist McSnail
   components:
   - type: Damageable
-    damageModifierSet: Sneople #not sure what this is
+    damageModifierSet: Sneople
   - type: Speech
     speechVerb: Sneople
     speechSounds: UnisexSneople
