@@ -175,3 +175,26 @@
   - sprite: *grayundergarments
     state: plasticbaglogo
 
+- type: marking
+  id: SneopleUnderwearTop
+  bodyPart: UndergarmentTop
+  groupWhitelist: [ Sneople ]
+  coloring:
+    default:
+      type: !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _Moffstation/Mobs/Customization/Sneople/undergarments.rsi
+    state: underweartop
+
+- type: marking
+  id: SneopleUnderwearBottom
+  bodyPart: UndergarmentBottom
+  groupWhitelist: [ Sneople ]
+  coloring:
+    default:
+      type: !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _Moffstation/Mobs/Customization/Sneople/undergarments.rsi
+    state: underwearbottom

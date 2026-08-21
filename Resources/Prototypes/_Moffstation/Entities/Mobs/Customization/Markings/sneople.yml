@@ -69,32 +69,6 @@
 
 # LLeg
 
-# UndergarmentBottom
-- type: marking
-  id: SneopleUnderwearBottom
-  bodyPart: undergarments
-  markingCategory: Undergarments
-  speciesRestriction: [ Sneople ]
-  coloring:
-    default:
-      type: !type:SimpleColoring
-        color: "#FFFFFF"
-  sprites:
-  - sprite: _Moffstation/Mobs/Customization/Sneople/undergarments.rsi
-    state: bottoms
-# UndergarmentTop
-- type: marking
-  id: SneopleUnderwearTop
-  bodyPart: undergarments
-  markingCategory: Undergarments
-  speciesRestriction: [ Sneople ]
-  coloring:
-    default:
-      type: !type:SimpleColoring
-        color: "#FFFFFF"
-  sprites:
-  - sprite: _Moffstation/Mobs/Customization/Sneople/undergarments.rsi
-    state: top
 # LFoot
 
 # RFoot
